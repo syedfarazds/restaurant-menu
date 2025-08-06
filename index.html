@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu - Order Online</title>
+    <style>
+        body { font-family: Arial; background: #f5f5f5; }
+        .menu { max-width: 800px; margin: auto; background: white; padding: 20px; }
+        .dish { border-bottom: 1px solid #eee; padding: 15px 0; }
+        .price { color: #d4351c; font-weight: bold; float: right; }
+        .order-form { background: #007bff; color: white; padding: 20px; margin-top: 30px; }
+        input, textarea { width: 100%; padding: 10px; margin: 5px 0; }
+        button { background: #28a745; color: white; padding: 15px 30px; border: none; }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>Welcome to [Future Restaurant]</h1>
+        <h2>📍 Table: 1</h2>
+        
+        <h3>🍗 Main Courses</h3>
+        <div class="dish">Chicken Shawarma <span class="price">25 SAR</span></div>
+        <div class="dish">Beef Kabsa <span class="price">35 SAR</span></div>
+        <div class="dish">Grilled Chicken <span class="price">30 SAR</span></div>
+        
+        <h3>🥗 Sides & Salads</h3>
+        <div class="dish">Caesar Salad <span class="price">20 SAR</span></div>
+        <div class="dish">French Fries <span class="price">15 SAR</span></div>
+        
+        <div class="order-form">
+            <h3>📝 Place Your Order</h3>
+            <form action="https://hook.us2.make.com/pn7alrjc0nqqylgwgx47ka6i514k8lhv" method="POST">
+                <input type="hidden" name="table" value="Table 1">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="WhatsApp Number" required>
+                <textarea name="order" placeholder="Type your order here (e.g., 1x Chicken Shawarma, 1x Caesar Salad)" required></textarea>
+                <textarea name="notes" placeholder="Special requests (optional)"></textarea>
+                <button type="submit">🍽️ CONFIRM ORDER</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
